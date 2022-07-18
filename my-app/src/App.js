@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import FilmList from "./components/FilmList";
 
 function App() {
