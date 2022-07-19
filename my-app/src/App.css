@@ -1,35 +1,25 @@
 .App {
-  width: 100%;
-  min-height: 900px;
   background-color: #0d0a0a;
   color: white;
   font-family: FuturaBT-Book;
 }
-
-.App > .row {
-  overflow-x: auto;
-  flex-wrap: nowrap;
+.film-list {
+  margin-top: 50px;
 }
-
 .poster {
   display: inline;
-  position: relative;
-  transition: transform 0.2s;
-}
-
-.poster:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-}
-
-.poster:hover .overlay {
-  opacity: 1;
 }
 
 img {
+  overflow: auto;
   height: 250px;
   width: auto;
   margin: 0;
-  padding: 5px;
+  padding: 10px;
   border-radius: 4px;
+  transition: transform 0.2s;
+}
+img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

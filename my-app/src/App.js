@@ -91,7 +91,7 @@ function App() {
 
   return (
     <div className="container-fluid App">
-      <div className="row d-flex align-items-center">
+      <div className="row film-list">
         <FilmList films={films} />
       </div>
     </div>
