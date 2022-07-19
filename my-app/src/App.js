@@ -90,8 +90,8 @@ function App() {
   ]);
 
   return (
-    <div className="container">
-      <div className="row">
+    <div className="container-fluid App">
+      <div className="row d-flex align-items-center">
         <FilmList films={films} />
       </div>
     </div>
