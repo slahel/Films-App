@@ -5,5 +5,11 @@
   font-family: FuturaBT-Book;
 }
 .poster {
-  margin: 10px;
+  display: inline;
+}
+img {
+  height: 250px;
+  width: auto;
+  margin: 0;
+  padding: 5px;
 }

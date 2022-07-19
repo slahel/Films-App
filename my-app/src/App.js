@@ -2,6 +2,8 @@ import "./App.css";
 import React, { useState } from "react";
 import FilmList from "./components/FilmList";
 import "bootstrap/dist/css/bootstrap.min.css";
+// import Container from "react-bootstrap/Container";
+// import Row from "react-bootstrap/Row";
 
 function App() {
   const [films, setFilms] = useState([
@@ -88,8 +90,8 @@ function App() {
   ]);
 
   return (
-    <div class="container">
-      <div class="row">
+    <div className="container">
+      <div className="row">
         <FilmList films={films} />
       </div>
     </div>
