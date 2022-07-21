@@ -3,20 +3,21 @@
   color: white;
   font-family: FuturaBT-Book;
 }
-.film-list {
-  margin-top: 50px;
+.App > .poster {
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  display: inline-flex;
 }
 .poster {
-  display: inline;
+  display: inline-flex;
+  /* Do this */
 }
 
 img {
-  overflow: auto;
+  margin: 50px 10px;
   height: 250px;
   width: auto;
-  margin: 0;
-  padding: 10px;
-  border-radius: 4px;
+  border-radius: 2px;
   transition: transform 0.2s;
 }
 img:hover {
