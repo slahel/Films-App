@@ -10,26 +10,28 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [films, setFilms] = useState([]);
+  const [searchValue, setSearchValue] = useState("");
 
-  const getMovieRequest = async () => {
-    const url = "http://www.omdbapi.com/?s=star%20wars&apikey=46a55ace";
+  const getMovieRequest = async (searchValue) => {
+    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=46a55ace`;
 
     const response = await fetch(url);
     const responseJson = await response.json();
 
-    setFilms(responseJson.Search);
-    console.log(responseJson);
+    if (responseJson.Search) {
+      setFilms(responseJson.Search);
+    }
   };
 
   useEffect(() => {
-    getMovieRequest();
-  }, []);
+    getMovieRequest(searchValue);
+  }, [searchValue]);
 
   return (
     <div className="container-fluid App">
       <div className="row ">
         <Header />
-        <SearchBar />
+        <SearchBar searchValue={searchValue} setSearchValue={setSearchValue} />
       </div>
       <div className="row film-list">
         <div className="col-12">
