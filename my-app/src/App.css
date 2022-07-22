@@ -2,31 +2,13 @@
   background-color: #0d0a0a;
   color: white;
   font-family: FuturaBT-Book;
-  overflow-x: hidden;
-  display: flex;
-  flex-wrap: wrap;
-}
-.App > .row {
-  /* overflow-x: scroll;
   flex-wrap: nowrap;
-  display: inline-flex; */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1rem;
-  overflow: hidden;
+  padding: 5%;
 }
-
-/* .row {
-  display: grid;
-  grid-template-columns: 1fr 300px 1fr;
-  grid-gap: 1rem;
-} */
-.poster {
-  overflow: hidden;
+.form-control {
+  width: 25%;
 }
-
 img {
-  overflow-x: hidden;
   margin: 50px 10px;
   height: 250px;
   width: auto;
