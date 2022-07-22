@@ -2,18 +2,31 @@
   background-color: #0d0a0a;
   color: white;
   font-family: FuturaBT-Book;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
 }
-.App > .poster {
-  overflow-x: scroll;
+.App > .row {
+  /* overflow-x: scroll;
   flex-wrap: nowrap;
-  display: inline-flex;
+  display: inline-flex; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  overflow: hidden;
 }
+
+/* .row {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  grid-gap: 1rem;
+} */
 .poster {
-  display: inline-flex;
-  /* Do this */
+  overflow: hidden;
 }
 
 img {
+  overflow-x: hidden;
   margin: 50px 10px;
   height: 250px;
   width: auto;

@@ -5,9 +5,9 @@ export default function FilmList(props) {
     <div>
       <h1>Films</h1>
       {props.films.map((film, index) => (
-        <div className="poster ">
-          <img src={film.Poster}></img>
-        </div>
+        <span className="poster col-6">
+          <img src={film.Poster} alt="poster"></img>
+        </span>
       ))}
     </div>
   );

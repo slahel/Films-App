@@ -91,8 +91,10 @@ function App() {
 
   return (
     <div className="container-fluid App">
-      <div className="row film-list">
-        <FilmList films={films} />
+      <div>
+        <div className="row film-list">
+          <FilmList films={films} />
+        </div>
       </div>
     </div>
   );
