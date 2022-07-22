@@ -89,6 +89,10 @@ function App() {
     },
   ]);
 
+  const getMovieRequest = () => {
+    const url = "http://www.omdbapi.com/?s=star%20wars&apikey=46a55ace";
+  };
+
   return (
     <div className="container-fluid App">
       <div>
