@@ -8,9 +8,10 @@
 .form-control {
   width: 25%;
 }
+.poster {
+  position: relative;
+}
 img {
-  margin: 50px 10px;
-  height: 250px;
   width: auto;
   border-radius: 2px;
   transition: transform 0.2s;
@@ -18,4 +19,14 @@ img {
 img:hover {
   cursor: pointer;
   transform: scale(1.1);
+}
+.poster:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
 }

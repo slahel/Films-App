@@ -4,6 +4,7 @@ import FilmList from "./components/FilmList";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AddFavourite from "./components/AddFavourite";
 //import * as bootstrap from "bootstrap";
 // import Container from "react-bootstrap/Container";
 // import Row from "react-bootstrap/Row";
@@ -37,6 +38,9 @@ function App() {
         <div className="col-12">
           <FilmList films={films} />
         </div>
+      </div>
+      <div>
+        <AddFavourite />
       </div>
     </div>
   );
