@@ -10,11 +10,15 @@
 }
 .poster {
   position: relative;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 img {
+  height: 250px;
   width: auto;
   border-radius: 2px;
   transition: transform 0.2s;
+  margin: 10px;
 }
 img:hover {
   cursor: pointer;
@@ -22,11 +26,15 @@ img:hover {
 }
 .poster:hover .overlay {
   opacity: 1;
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .overlay {
-  opacity: 0;
   position: absolute;
-  bottom: 0;
+  opacity: 0;
+  top: 50%;
+  left: 0;
   width: 100%;
+  height: 120px;
   background: rgba(0, 0, 0, 0.8);
 }
