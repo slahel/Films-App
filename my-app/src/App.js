@@ -12,6 +12,7 @@ import AddFavourite from "./components/AddFavourite";
 function App() {
   const [films, setFilms] = useState([]);
   const [searchValue, setSearchValue] = useState("");
+  const [favourites, setFavourites] = useState([]);
 
   const getMovieRequest = async (searchValue) => {
     const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=46a55ace`;
